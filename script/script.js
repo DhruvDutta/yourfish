@@ -145,7 +145,7 @@ function food(t){
     z  = setInterval(function (){
         t.y+=d;
         if(t.y>=game.config.height){
-            score-=siz;
+            score-=siz*d;
             scoreText.setText('score: ' + score);
             clearInterval(z);
             food(t);
@@ -161,7 +161,7 @@ function food1(t){
     y  = setInterval(function (){
         t.y+=d;
         if(t.y>=game.config.height){
-            score-=siz1;
+            score-=siz1*d;
             scoreText.setText('score: ' + score);
             clearInterval(y);
             food1(t);
@@ -177,7 +177,7 @@ function food2(t){
     x  = setInterval(function (){
         t.y+=d;
         if(t.y>=game.config.height){
-            score-=siz2;
+            score-=siz2*d;
             scoreText.setText('score: ' + score);
             clearInterval(x);
             food2(t);
@@ -193,7 +193,7 @@ function food3(t){
     w  = setInterval(function (){
         t.y+=d;
         if(t.y>=game.config.height){
-            score-=siz3;
+            score-=siz3*d;
             scoreText.setText('score: ' + score);
             clearInterval(w);
             food3(t);
