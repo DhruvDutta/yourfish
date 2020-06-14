@@ -103,7 +103,7 @@ function update(){
       }
       }
     if(score<0){
-        document.write('<center><h2 style="margin-top:50vh;">Game Over</h2><hr><a href="https://dhruvdutta.github.io/MYWebsite/">View More</a><hr></center>')
+        document.write('<center><h2 style="margin-top:50vh;">Game Over</h2><hr><a href="https://dhruvdutta.github.io/mywebsite/">View More</a><hr></center>')
         throw new Error('Game Over');
     }
       
